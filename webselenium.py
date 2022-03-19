@@ -15,7 +15,7 @@ print("Current Time = ", current_time)
 ListIMBD = []
 
 
-for rich in driver.find_elements_by_class_name("o-chart-results-list-row-container"):
+for rich in driver.find_elements_by_class_name("o-chart-results-list-row"):
     print(rich.text)
     for img in rich.find_elements_by_class_name("c-lazy-image__img"):
         print(img.get_attribute("src"))

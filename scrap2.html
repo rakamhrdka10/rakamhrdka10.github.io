@@ -16,7 +16,7 @@
                 str +="<tr><td>No</td><td class='tables'>images</td><td class='tables'>Judul</td><td class='tables'>Penyanyi</td><td class='tables'>Lama</td><td class='tables'>Waktu scrapping</td></tr>";
                 $.each(obj,function(n,data){
                     str +="<td>" + data.No + "</td>";
-                    str +="<td class='tables'>" + data.Image + "</td>";
+                    str += '<td><img src="' + data.Image + '"></td>';
                     str +="<td class='tables'>" + data.Judul + "</td>";
                     str +="<td class='tables'>" + data.Penyanyi + "</td>";
                     str +="<td class='tables'>" + data.Lama + "</td>";
